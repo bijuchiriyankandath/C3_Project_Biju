@@ -81,5 +81,13 @@ class RestaurantTest {
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>Item Cost<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-    
+    @Test
+    public void total_cost_should_return_sum_of_prices_for_all_items_based_on_itemNames() {
+        //Act
+        List<String> itemNames = Arrays.asList("Sweet corn soup","Vegetable lasagne");
+        int totalCost = restaurant.totalCost(itemNames); //Method yet to be implemented
+
+        //Assert
+        assertEquals(388, totalCost);
+    }
 }
